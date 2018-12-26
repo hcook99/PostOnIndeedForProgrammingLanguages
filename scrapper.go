@@ -93,7 +93,6 @@ func mapOfProgrammingLanguagesInArea(listOfProgrammingLanguages []string, webPag
 		}
 	}
 
-	//fmt.Println(elapsed)
 	return mapOfLangs
 }
 
