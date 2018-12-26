@@ -4,17 +4,7 @@ import (
 	"net/http"
 	"html/template"
 	"log"
-	"os"
-	"fmt"
 )
-
-func determineListenAddress() (string, error) {
-	port := os.Getenv("PORT")
-	if port == "" {
-	  return "", fmt.Errorf("$PORT not set")
-	}
-	return ":" + port, nil
-  }
 
 func handleStand(w http.ResponseWriter, r *http.Request){
 	http.ServeFile(w, r, "static/index.html")
@@ -41,9 +31,8 @@ func handleInput(w http.ResponseWriter, r *http.Request){
 }
 
 func main() {
-	addr,_ := determineListenAddress()
 	http.HandleFunc("/", handleStand)
 	http.HandleFunc("/input_box",handleInput)
 
-	log.Fatal(http.ListenAndServe(addr, nil))
+	log.Fatal(http.ListenAndServe(":8080", nil))
 }
