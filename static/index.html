@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Programming Language Popularity in Area</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <style>
+            body {
+                font-family: Arial;
+                background-color: lightblue;
+                -webkit-background-size: cover;
+                -moz-background-size: cover;
+                -o-background-size: cover;
+                background-size: cover;
+            }
+
+
+            * {
+                box-sizing: border-box;
+            }
+
+
+            form.input_box input[type=text] {
+                padding: 10px;
+                font-size: 17px;
+                border: 1px solid grey;
+                float: left;
+                width: 80%;
+                background: #f1f1f1;
+            }
+
+            form.input_box button {
+                float: left;
+                width: 20%;
+                padding: 10px;
+                background: #2196F3;
+                color: white;
+                font-size: 17px;
+                border: 1px solid grey;
+                border-left: none;
+                cursor: pointer;
+            }
+
+            form.input_box button:hover {
+                background: #0b7dda;
+            }
+
+            form.input_box::after {
+                content: "";
+                clear: both;
+                display: table;
+            }
+
+            p{
+                padding:10px;
+                border: black;
+                background: white;
+                width: 60%;
+                margin-right: auto;
+                margin-left: auto;
+            }
+        </style>
+    </head>
+    <body>
+        <p>
+            <strong>Tip: </strong>Enter a location to see the amount of times any programming language mentioned is requested in an indeed job search.
+        </p>
+        <form class="input_box" action="/input_box" method="post" style="max-width:500px;margin-right: auto;margin-left: auto">
+            <input type="text" placeholder="Enter URL..." name="urlEntry">
+            <button type="submit" value="Data"><i class="fa fa-search"></i></button>
+        </form>
+    </body>
+</html>

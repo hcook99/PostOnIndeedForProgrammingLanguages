@@ -1,0 +1,50 @@
+Java
+ C 
+C++
+C#
+Python
+.NET
+PHP
+JavaScript
+Delphi/Object Pascal
+Swift
+Perl
+Ruby
+Assembly
+ R 
+Visual Basic
+Objective-C
+Go 
+MATLAB
+SQL
+Scratch
+SAS
+ D 
+Dart
+ABAP
+COBOL
+Ada
+Fortran
+Transact-SQL
+Lua
+Scala
+Logo
+F#
+Lisp
+LabVIEW
+Prolog
+Haskell
+Scheme
+Groovy
+RPG
+Apex
+Erlang
+MQL4
+Rust
+Bash
+Ladder Logic
+ Q 
+Julia
+Alice
+VHDL
+Awk
