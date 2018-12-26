@@ -1,8 +1,6 @@
 {
 	"ImportPath": "github.com/hcook99/PostOnIndeedForProgrammingLanguages",
 	"GoVersion": "go1.11.4",
-	"Packages": [
-		"./..."
-	],
+	"GodepVersion": "v74",
 	"Deps": []
 }
