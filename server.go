@@ -4,7 +4,17 @@ import (
 	"net/http"
 	"html/template"
 	"log"
+	"os"
 )
+
+func GetPort() string {
+	var port = os.Getenv("PORT")
+	
+	if port == "" {
+ 		port = "8080"
+ 	}
+ 	return ":" + port
+}
 
 func handleStand(w http.ResponseWriter, r *http.Request){
 	http.ServeFile(w, r, "static/index.html")
@@ -34,5 +44,5 @@ func main() {
 	http.HandleFunc("/", handleStand)
 	http.HandleFunc("/input_box",handleInput)
 
-	log.Fatal(http.ListenAndServe(":8080", nil))
+	log.Fatal(http.ListenAndServe(GetPort(), nil))
 }
